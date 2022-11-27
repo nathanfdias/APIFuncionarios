@@ -17,7 +17,7 @@ public class Time {
     @Id
     @GeneratedValue(strategy =  GenerationType.IDENTITY)
     @Column(name = "tim_cd_id")
-    private Integer id;
+    private Long id;
 
     @Column(name = "tim_tx_nome")
     private String nome;
