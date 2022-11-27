@@ -1,0 +1,10 @@
+Spring Web WEB
+Spring Data JPA SQL
+Spring Boot DevTools DEVELOPER TOOLS
+Lombok DEVELOPER TOOLS
+PostgreSQL Driver SQL
+H2 Database SQL
+Java Mail Sender I/O
+Validation I/O
+Spring Security SECURITY
+Spring Fox Swagger
