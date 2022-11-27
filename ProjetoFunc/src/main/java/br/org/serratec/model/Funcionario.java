@@ -5,8 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -36,7 +34,10 @@ public class Funcionario {
     @Column(name = "func_tx_apelido")
     private String apelido;
 
-    @ManyToOne
-    @JoinColumn(name = "fk_tim_cd_id", referencedColumnName = "tim_cd_id")
-    private Time time;
+    @Column(name = "func_tx_time")
+    private String time;
+
+    // @ManyToOne
+    // @JoinColumn(name = "fk_tim_cd_id", referencedColumnName = "tim_cd_id")
+    // private Time time;
 }

@@ -9,5 +9,5 @@ import br.org.serratec.model.Funcionario;
 public interface FuncionarioRepository extends JpaRepository <Funcionario, Long> {
     List<Funcionario> findByNome(String nome);
 
-    Funcionario findByLogin(String email);
+    Funcionario findByEmail(String email);
 }

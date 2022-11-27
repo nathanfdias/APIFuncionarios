@@ -34,15 +34,15 @@ public class FuncionarioService {
         return funcionarios;
     }
 
-    public Funcionario update(Funcionario funcionario, Long id){
+    public Funcionario update(Long id ,Funcionario funcionario){
         funcionario.setId(id);
         return funcionarioRepository.save(funcionario);
     }
 
-    public String Login(String email, String senha){
-        Funcionario funcionario = funcionarioRepository.findByLogin(email);
+    public String emailApp(String email, String senha){
+        Funcionario funcionario = funcionarioRepository.findByEmail(email);
 
-        if(funcionarioRepository.findByLogin(email) != null){
+        if(funcionarioRepository.findByEmail(email) != null){
             if(funcionario.getSenha().equals(senha)){
                 return "Logado com Sucesso";
             } else {

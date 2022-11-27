@@ -9,6 +9,16 @@
       "projectName": "ProjetoFunc",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ProjetoFuncApplication<ProjetoFunc>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "br.org.serratec.ProjetoFuncApplication",
+      "projectName": "ProjetoFunc",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }
